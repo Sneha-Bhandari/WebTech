@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./image.png" alt="" height="350px" width="500px" usemap="#image-mapping">
+    <map name="image-mapping">
+
+        <area shape="circle" coords="350,350,150"  alt="" onclick="imageMapping()">
+        <area shape="rect" coords="0,0,50,100" href="https:/www.youtube.com" alt="">
+    <!-- shapes: circle, rect, poly, default -->
+
+    </map>
+
+    <script>
+        function imageMapping(){
+            alert ("go away bitch");
+        }
+    </script>
+</body>
+</html> 

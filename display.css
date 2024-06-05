@@ -1,0 +1,27 @@
+.main{
+    /* background-color: aqua; */
+   display: inline;
+}
+
+.main div{
+    display: unset;
+}
+.aa{
+    background-color: red;
+}
+
+.bb{
+    background-color: rgb(11, 100, 100);
+}
+
+.cc{
+    background-color:rgb(64, 109, 18);
+}
+
+.dd{
+    background-color: rgb(139, 92, 34);
+}
+
+.ee{
+    background-color: rgb(12, 165, 114);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+</head>
+<link rel="stylesheet" href="./second.css">
+<body>
+    <form id="form" onsubmit="formSubmit(event)">
+    
+        <div>
+          <label>Name:</label>
+          <input type="text"  id="name" placeholder="Enter your name" name="name" />
+        </div>
+        <br />
+        
+        <div>
+          <label>Address:</label>
+          <input type="text"  id="2" placeholder="Enter your address" name="address"/>
+        </div>
+        <br />
+        <div>
+            <label>Email:</label>
+            <input type="email"  id="email" placeholder="Enter your email" name="email"/>
+          </div>
+          <br />
+          <label>Password: </label>
+          <input type="password" name="" id="password" placeholder="Enter Password"/><br><br>
+          <div>
+            <label>Phone number:</label>
+            <input type="text"  id="number" placeholder="Enter your phoneNumber" name="phoneNumber"/>
+          </div>
+          <br />
+          <div>
+            <label>Date of birth:</label>
+            <input type="date"  id="6"/>
+          </div>
+          <br />
+          <div>
+            <label>Description:</label>
+            <textarea name="message" id="7" cols="6" rows="3"></textarea>
+          </div>
+          <br />
+          <div>
+            <label id="gender">Gender:</label>
+            <input type="radio" name="gender1" value="Male"/>Male
+            <input type="radio" name="gender1" value="Female"/>Female <br />
+          </div><br>
+          <div>
+            <label>Faculty</label>
+            <select name="" id="9">
+                <option disabled selected>Select faculty</option>
+              <option value="CSIT">CSIT</option>
+              <option value="BCA">BCA</option>
+              <option value="BIT">BIT</option>
+            </select>
+          </div>
+          <br />
+
+          <div>
+            <label>Batch: </label>
+            <select name="" id="10">
+                <option disabled selected>Select Batch</option>
+              <option value="2076">2076</option>
+              <option value="2077">2077</option>
+              <option value="2078">2078</option>
+              <option value="2079">2079</option>
+              <option value="2080">2080</option>
+              <option value="2081">2081</option>
+            </select>
+          </div>
+          <br />
+          <input type="submit" id="11" value="Submit"><br><br>
+        </form>
+        <script src="./second.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: right;
+    padding: 50px;
+    margin: 10px;
+}
+
+.lorem{
+    color: red;
+}

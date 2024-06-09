@@ -45,61 +45,49 @@ const nameRegex = /^[A-Za-z]+$/;
 const numberRegex = /^[9][7-8][0-9]{8}$/;
 const emailRegex = /^[a-zA-Z0-9]+@[a-z]+\.[a-z]+$/;
 
-// Function to validate form
-function validateForm() {
-    const nameInput = document.getElementById('name');
-    const numberInput = document.getElementById('number');
-    const emailInput = document.getElementById('email');
-
-    const name = nameInput.value.trim();
-    const number = numberInput.value.trim();
-    const email = emailInput.value.trim();
-
-    if (!nameRegex.test(name)) {
-        alert('Please enter a valid name');
-        nameInput.focus();
-        return false;
-    }
-
-    if (!numberRegex.test(number)) {
-        alert('Please enter a valid number starting with 97 or 98 and has 10 digits');
-        numberInput.focus();
-        return false;
-    }
-
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address');
-        emailInput.focus();
-        return false;
-    }
-
-    return true;
-}
-
-
-
-
-const form = document.getElementById('form');
-
-// function validateName(Fname){
-//     const nameRegex = /^[A-Za-z]+$/;
-//     return nameRegex.test(Fname);
-// }
-
-
 function formSubmit(event){
     event.preventDefault();
 
     let input2 = document.getElementById('name').value;
-    const nameRegex =  /^[A-Za-z]+$/;
-    console.log(nameRegex.test(input2));
+    var nameRegex =  /^[A-Za-z]+$/;
+    if(!nameRegex.test(input2)){
+        document.getElementById("nameError").innerText='  name should contain alphabet only *';
+        event.preventDefault();
+    }
+    console.log(input2);
    
-    let input3 = document.querySelector('input[name="gender1"]:checked').value;
-    const genderRegex = /^(male|female)$/;
-    console.log(genderRegex.test(input3));
+    
+    let input3 = document.getElementById('address').value;
+    var addressRegex =  /^[A-Za-z0-9]+$/;
+    if(!addressRegex.test(input3)){
+        document.getElementById("addressError").innerText='Address is required *';
+        event.preventDefault();
+    }
+    console.log(input3);
 
-   let input4 = document.getElementById('password').value
-   const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    console.log(passwordRegex.test(input4));
-
+    let input5 = document.getElementById('email').value;
+    var emailRegex =  /^[a-zA-Z0-9]+@[a-z]+\.[a-z]+$/;
+    if(!emailRegex.test(input5)){
+        document.getElementById("emailError").innerText='Invalid email format *';
+        event.preventDefault();
+    }
+    console.log(input5);
+   
+    let input4 = document.getElementById('password').value;
+    var passwordRegex =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if(!passwordRegex.test(input4)){
+        document.getElementById("passwordError").innerText='password must be strong *';
+        event.preventDefault();
+    }
+    console.log(input4);
 }
+
+//validdata= true
+// if (   ){
+    //validdata= false
+//}
+
+ // array ko sum vitra vako nested array [1[2,3,4[5,6[7,8[9,10[11[ number or array]]]]]]3,5,2] 
+ //array vaye loop , number vaye sum by using recursive function
+
+ 
